@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Poorva Dixit</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <div class="container nav">
+      <a class="brand" href="#hero">Poorva Dixit</a>
+      <nav id="main-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" title="Toggle theme">🌗</button>
+        <button id="menu-toggle" class="hamburger" aria-label="toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="avatar-wrap">
+          <img src="pfp.jpg" alt="Profile photo" class="avatar" />
+        </div>
+        <div class="socials">
+          <a href="https://github.com/poorva06d" aria-label="GitHub" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/poorva-dixit-6860b2349/" aria-label="LinkedIn" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <h1>Hi, I’m <span class="accent">Poorva Dixit</span></h1>
+        <p class="lead"><span id="typewriter"></span><span class="cursor">|</span></p>
+        <p class="mini">Aspiring computer science engineer with a strong foundation in programming, data structures, and web development. </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn ghost" href="#contact">Work with me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- subtle animated blobs -->
+    <svg class="bg-blob" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(300,300)">
+        <path id="blob" d="M120 -152C150 -126 175 -93 187 -55C199 -17 197 28 179 66C161 104 127 135 88 163C49 192 5 218 -32 208C-69 199 -101 154 -129 113C-157 72 -181 36 -192 -7C-203 -50 -201 -100 -177 -131C-153 -162 -108 -174 -66 -185C-23 -196 15 -207 56 -195C96 -183 89 -177 120 -152Z" fill="url(#g1)"></path>
+      </g>
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#6EE7B7"/><stop offset="1" stop-color="#60A5FA"/></linearGradient>
+      </defs>
+    </svg>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container section-grid">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>Motivated and curious Computer Science student eager to explore software development, machine learning, and web 
+technologies. Looking for opportunities to develop hands-on experience and contribute to innovative projects solving real world 
+problems. </p>
+        <ul class="about-list">
+          <li>🎓 B.Tech in Computer Science</li>
+          <li>🛠️ Main stack: HTML, CSS, JavaScript, Node.js</li>
+          <li>🌍 Based in: Prayagraj</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <strong>2024 — Present</strong>
+            <p>BTech in Computer Science - MNNIT Allahabad</p>
+          </div>
+          <div class="tl-item">
+            <strong>2012 — 2024</strong>
+            <p>Senior Secondary Education — Asian International Private School</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Selected projects — click a card to view details.</p>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project cards: replace images, titles, descriptions and links -->
+        <article class="project" data-title="Project One" data-desc="A single-page game built with HTML/CSS and understanding of JavaScript." data-img="project 1.png" data-link="https://github.com/poorva06d/multiplayer-game"target="_blank">
+          <img src="project 1.png" alt="">
+          <div class="proj-info">
+            <h3>Project One</h3>
+            <p>Multiplayer Game.</p>
+          </div>
+        </article>
+
+        <article class="project" data-title="Project Two" data-desc="A small e-commerce UI prototype using HTML/CSS." data-img="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&q=80" data-link="https://github.com/poorva06d/amazon-proto"target="_blank">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&q=60" alt="">
+          <div class="proj-info">
+            <h3>Project Two</h3>
+            <p>E-commerce UI prototype.</p>
+          </div>
+        </article>
+
+        <article class="project" data-title="Project Three" data-desc="A medicine tracker website under construction." data-img="project 3.png" data-link="https://github.com/poorva06d/Webify_MediHelp" target="_blank">
+          <img src="project 3.png" alt="">
+          <div class="proj-info">
+            <h3>Project Three</h3>
+            <p>MediHelp.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Web Development</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>HTML & CSS</h4>
+          <div class="bar"><div data-level="98"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>JavaScript</h4>
+          <div class="bar"><div data-level="85"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>React</h4>
+          <div class="bar"><div data-level="45"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>Node.js</h4>
+          <div class="bar"><div data-level="75"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills_2" class="section">
+    <div class="container">
+      <h2 class="section-title">Tech</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Python</h4>
+          <div class="bar"><div data-level="98"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>AI ML</h4>
+          <div class="bar"><div data-level="85"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>Core Subjects</h4>
+          <div class="bar"><div data-level="90"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>Robotics</h4>
+          <div class="bar"><div data-level="75"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="container contact-grid">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Interested in working together? Send a message — I'll reply as soon as I can.</p>
+
+        <form id="contact-form">
+          <label>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <input type="email" name="email" placeholder="Your email" required />
+          </label>
+          <label>
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send message</button>
+            <a class="btn ghost" href="mailto:you@example.com">Or email me</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Get my resume</h3>
+        <p>Download my CV or connect via social networks.</p>
+        <a class="btn" href="Resume-20243534.pdf" download target="_blank">Download CV</a>
+
+        <div class="contact-socials">
+          <a href="https://github.com/poorva06d" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/poorva-dixit-6860b2349/" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Poorva — Built with ❤️</small>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div id="proj-modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <img id="modal-img" src="" alt="">
+      <div class="modal-body">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <div class="modal-actions">
+          <a id="modal-link" class="btn" href="#" target="_blank" rel="noreferrer">View live</a>
+          <a id="modal-github" class="btn ghost" href="#" target="_blank" rel="noreferrer">Source</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
